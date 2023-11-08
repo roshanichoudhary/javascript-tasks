@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Which Century?</h2>
+
+    <p id="demo"></p>
+
+    <script>
+      let year;
+      function century(year) {
+        switch (year) {
+          case 1701:
+            c = "18th century";
+            break;
+          case 1900:
+            c = "19th century";
+            break;
+          case 1601:
+            c = "17th centuryth";
+            break;
+          case 2000:
+            c = "20th century";
+            break;
+          case 89:
+            c = "1st century";
+            break;
+          default:
+            c = "enter a year";
+        }
+      }
+      century(1701);
+
+      document.getElementById("demo").innerHTML = c;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h2>Maximum number in an array of numbers</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      const arr = [80, 6, 72, 105, 33, 5, 11, 400];
+      arr.sort(function (a, b) {
+        return b - a;
+      });
+      document.getElementById("demo1").innerHTML = arr;
+
+      max = arr[0];
+      document.getElementById("demo2").innerHTML =
+        "Maximum number in an array is " + max;
+    </script>
+  </body>
+</html>

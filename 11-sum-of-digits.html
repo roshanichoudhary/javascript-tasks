@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h2>Sum of atleast 4 digits</h2>
+    <p id="demo"></p>
+    <script>
+      const posNum = 7668;
+      string = posNum.toString();
+      let sum = 0;
+      for (let x of string) {
+        sum = sum + parseInt(x);
+        console.log(sum);
+      }
+      document.getElementById("demo").innerHTML =
+        "Sum of positive integer number " + sum;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge Array</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+      const color1 = ["blue", "gray", "green"];
+      document.getElementById("demo1").innerHTML = color1;
+
+      const color2 = ["pink", "red", "maroon"];
+      document.getElementById("demo2").innerHTML = color2;
+
+      const merge = color1.concat(color2);
+      document.getElementById("demo3").innerHTML = merge;
+    </script>
+  </body>
+</html>

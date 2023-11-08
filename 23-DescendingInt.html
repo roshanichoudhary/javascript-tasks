@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descending Integer Number</title>
+  </head>
+  <body>
+    <script>
+      const descendingOrder = (n) => {
+        let myString = n.toString();
+        const myArray = myString.split("");
+        let desc = myArray.sort();
+        desc = myArray.reverse();
+        myString = desc.join("");
+        n = Number(myString);
+        return n;
+      };
+
+      console.log(descendingOrder(0)); // 0
+      console.log(descendingOrder(1)); // 1
+      console.log(descendingOrder(1021)); // 2110
+      console.log(descendingOrder(42145)); // 54421
+      console.log(descendingOrder(145263)); // 654321
+      console.log(descendingOrder(123456789)); // 987654321
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h2>Returns an array containing only the positive numbers</h2>
+    <p id="demo"></p>
+    <script>
+      const arr = [-1, -2, 3, 4, -5, 6, -7, 8, 9, 10];
+
+      for (i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+          delete arr[i];
+        }
+      }
+      document.getElementById("demo").innerHTML = arr;
+    </script>
+  </body>
+</html>
